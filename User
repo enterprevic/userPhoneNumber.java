@@ -1,0 +1,33 @@
+import java.util.Scanner;
+
+public class HelloWorldApplet {
+
+public static void main(String[] args)
+{
+	//* A program to take users phone number
+	Scanner scan = new Scanner (System.in);
+	
+	String phoneInput = "Please input your Phone Number";
+	System.out.println(phoneInput);
+	long telNumber = scan.nextLong();
+	String confirmNumber = "Is this your number: ";
+	
+	System.out.println(confirmNumber  + telNumber + "?");
+	System.out.println("a. Yes");
+	System.out.println("b. No");
+	System.out.println("please enter a or b.");
+	String choice = scan.next();
+	if (telNumber != 0 ){
+        if (choice.equals("a"))
+        {
+            System.out.println("Thank you for your time");
+        }
+        
+        else if (choice.equals("b"))
+        {
+            System.out.println("Please reinput your phone number");
+        }
+	
+     }
+  }
+}
